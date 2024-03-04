@@ -1,0 +1,30 @@
+{
+  "name": "koa-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start-dev": "nodemon src/server.js --exec \"node --require dotenv/config\"",
+    "start": "node --require dotenv/config  src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "koa": "^2.15.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-cookies": "^4.0.2",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "3.2.5"
+  }
+}
